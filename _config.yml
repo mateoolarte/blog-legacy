@@ -1,19 +1,19 @@
 # Site settings
-title: Clean Blog
+title: Mateo Olarte
+job: Frontend Developer
 header-img: img/home-bg.jpg
 email: mateo.olarte9@gmail.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
+copyright_name: Mateo Olarte
+description: "Blog personal"
 baseurl: ""
 url: "http://mateoolarte.com"
 twitter_username: mateo_olarte
-github_username:  mateoolarte
-facebook_username:  mateoolarte
-email_username:  mateo.olarte8@gmail.com
+github_username: mateoolarte
+linkedin_username: mateoolarte
+email_username: mateo.olarte8@gmail.com
 
 # Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+google_tracking_id: UA-60678906-1
 
 # Build settings
 markdown: kramdown
