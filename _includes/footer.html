@@ -53,7 +53,12 @@
           </li>
           {% endif %}
         </ul>
-        <p class="copyright text-muted">&copy; {{ site.copyright_name }} {{ site.time | date: '%Y' }}</p>
+        <small class="footer__text">
+          Hecho con <span class="footer__heart">♥</span> desde <strong>Medellín, Colombia</strong>
+        </small>
+        <p class="copyright">
+          © {{ site.copyright_name }} - {{ site.time | date: '%Y' }}
+        </p>
       </div>
     </div>
   </div>
