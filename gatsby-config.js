@@ -1,17 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`
+    title: `Blog - Mateo Olarte Fullstack & UX Developer`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`
+        name: `posts`,
+        path: `${__dirname}/src/posts/`
       }
     },
-    `gatsby-transformer-remark`
   ],
 
   pathPrefix: `/blog`

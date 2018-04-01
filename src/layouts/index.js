@@ -8,7 +8,7 @@ import "./index.css";
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Blog - Fullstack & UX Developer"
+      title="Blog - Mateo Olarte: Fullstack & UX Developer"
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }

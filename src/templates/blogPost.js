@@ -6,14 +6,9 @@ const Template = ({ data }) => {
   const { markdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
 
-  return <section className="blog-post-container">
-      <Helmet
-        title={frontmatter.title}
-        meta={[
-          { name: "description", content: "Sample" },
-          { name: "keywords", content: "sample, something" }
-        ]}
-      />
+  return (
+    <section className="blog-post-container">
+      <Helmet title={frontmatter.title} />
       <article className="blog-post">
         <header>
           <h1>{frontmatter.title}</h1>
@@ -25,6 +20,7 @@ const Template = ({ data }) => {
         />
       </article>
     </section>
+  );
 };
 
 export const pageQuery = graphql`
