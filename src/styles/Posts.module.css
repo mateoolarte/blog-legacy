@@ -1,0 +1,290 @@
+:root {
+  --blue: #1755b2;
+  --black-lighter: #1f232b;
+  --animation: cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.postsContainer {
+  max-width: 90%;
+  margin: 2rem auto 0;
+}
+
+.postsHeading {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.postsItem {
+  display: inline-flex;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.postsInfo {
+  transition: opacity 0.37s var(--animation);
+}
+
+.postsImage {
+  width: 100%;
+  height: 220px;
+  border: 1px solid var(--black-lighter);
+  transition: filter 0.37s var(--animation);
+  object-fit: cover;
+}
+
+.postsTitle {
+  margin: 0.5rem 0;
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+
+.postsDate {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8rem;
+}
+
+.postsDescription {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.9rem;
+}
+
+.postsLink:hover .postsInfo {
+  opacity: 0.8;
+}
+
+.postsLink:hover .postsImage {
+  filter: grayscale(90%);
+}
+
+@media (min-width: 736px) {
+  .postsContainer {
+    margin: 3rem auto 0;
+  }
+
+  .postsHeading {
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+  }
+
+  .postsItem {
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+
+  .postsItem:nth-child(odd) {
+    padding: 0 2rem 0 0;
+  }
+
+  .postsItem:nth-child(even) {
+    padding: 0 0 0 2rem;
+  }
+
+  .postsImage {
+    height: 300px;
+  }
+
+  .postsTitle {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+  }
+
+  .postsDate,
+  .postsDescription {
+    font-size: 1rem;
+  }
+  /* Post most recent Screen SM  */
+  .postsItem:nth-child(2) {
+    width: 100%;
+    padding: 0;
+  }
+
+  .postsItem:nth-child(2) .postsLink {
+    display: flex;
+    align-items: center;
+  }
+
+  .postsItem:nth-child(2) .postsInfo {
+    width: 50%;
+    padding-left: 2rem;
+  }
+
+  .postsItem:nth-child(2) .postsImage {
+    width: 50%;
+    height: 350px;
+  }
+
+  .postsItem:nth-child(2) .postsTitle {
+    font-size: 1.8rem;
+  }
+  /* Post most recent Screen SM */
+
+  /* Classes when only have two posts Screen SM */
+  .postsItemLayoutTwo:last-child {
+    width: 100%;
+    padding: 0;
+  }
+
+  .postsItemLayoutTwo:last-child .postsLink {
+    display: flex;
+    align-items: center;
+  }
+
+  .postsItemLayoutTwo:last-child .postsInfo {
+    width: 50%;
+    padding-left: 2rem;
+  }
+
+  .postsItemLayoutTwo:last-child .postsImage {
+    width: 50%;
+    height: 350px;
+  }
+
+  .postsItemLayoutTwo:last-child .postsTitle {
+    font-size: 1.8rem;
+  }
+  /* Classes when only have two posts Screen SM */
+}
+
+@media (min-width: 980px) {
+  .postsItem {
+    display: inline-flex;
+    width: calc(100% / 3);
+    margin-bottom: 5rem;
+  }
+
+  /* Post most recent Tablet Landscape */
+  .postsItem:nth-child(2) .postsInfo {
+    width: 55%;
+    padding-left: 5rem;
+  }
+
+  .postsItem:nth-child(2) .postsImage {
+    width: 45%;
+    height: 380px;
+  }
+
+  .postsItem:nth-child(2) .postsTitle {
+    font-size: 2.2rem;
+  }
+
+  .postsItem:nth-child(2) .postsDescription {
+    font-size: 1.2rem;
+  }
+  /* Post most recent Tablet Landscape */
+
+  /* Post second row Tablet Landscape */
+  .postsItem:nth-child(3),
+  .postsItem:nth-child(4) {
+    width: 50%;
+  }
+
+  .postsItem:nth-child(3) {
+    padding: 0 2rem 0 0;
+  }
+
+  .postsItem:nth-child(4) {
+    padding: 0 0 0 2rem;
+  }
+
+  .postsItem:nth-child(3) .postsImage,
+  .postsItem:nth-child(4) .postsImage {
+    height: 320px;
+  }
+
+  .postsItem:nth-child(3) .postsTitle,
+  .postsItem:nth-child(4) .postsTitle {
+    font-size: 1.5rem;
+  }
+  /* Post second row Tablet Landscape */
+
+  .postsItem:nth-child(5) {
+    padding-right: 1rem;
+  }
+
+  .postsItem:nth-child(6) {
+    padding: 0 1rem;
+  }
+
+  .postsItem:nth-child(7) {
+    padding: 0 0 0 1rem;
+  }
+
+  /* Classes when only have two posts Tablet Landscape */
+  .postsItemLayoutTwo:last-child {
+    width: 100%;
+    padding: 0;
+  }
+
+  .postsItemLayoutTwo:last-child .postsInfo {
+    width: 55%;
+    padding-left: 5rem;
+  }
+
+  .postsItemLayoutTwo:last-child .postsImage {
+    width: 45%;
+    height: 380px;
+  }
+
+  .postsItemLayoutTwo:last-child .postsTitle {
+    font-size: 2.2rem;
+  }
+
+  .postsItemLayoutTwo:last-child .postsDescription {
+    font-size: 1.2rem;
+  }
+  /* Classes when only have two posts Tablet Landscape */
+}
+
+@media (min-width: 1180px) {
+  /* Post most recent Screen LG */
+  .postsItem:nth-child(2) .postsImage {
+    height: 450px;
+  }
+
+  .postsItem:nth-child(2) .postsTitle {
+    font-size: 2.5rem;
+  }
+
+  .postsItem:nth-child(2) .postsDescription {
+    font-size: 1.4rem;
+  }
+  /* Post most recent Screen LG */
+
+  /* Post second row Screen LG */
+  .postsItem:nth-child(3) .postsImage,
+  .postsItem:nth-child(4) .postsImage {
+    height: 380px;
+  }
+
+  .postsItem:nth-child(3) .postsTitle,
+  .postsItem:nth-child(4) .postsTitle {
+    font-size: 1.8rem;
+  }
+
+  .postsItem:nth-child(3) .postsDescription,
+  .postsItem:nth-child(4) .postsDescription {
+    font-size: 1.2rem;
+  }
+  /* Post second row Screen LG */
+
+  /* Classes when only have two posts Tablet Landscape */
+  .postsItemLayoutTwo:last-child .postsImage {
+    height: 450px;
+  }
+
+  .postsItemLayoutTwo:last-child .postsTitle {
+    font-size: 2.5rem;
+  }
+
+  .postsItemLayoutTwo:last-child .postsDescription {
+    font-size: 1.4rem;
+  }
+  /* Classes when only have two posts Tablet Landscape */
+}
+
+@media (min-width: 1600px) {
+  .postsContainer {
+    max-width: 70%;
+  }
+}

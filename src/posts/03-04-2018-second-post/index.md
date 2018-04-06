@@ -1,7 +1,7 @@
 ---
-path: "/hello-world"
-date: "2018-04-01"
-title: "Hello world post"
+path: "/second-post"
+date: "2018-04-03"
+title: "The Future Of Branding? Synthetic Voices That Sound Just Like Our Own"
 cover: "https://res.cloudinary.com/mateoolarte/image/upload/v1522387717/personal_website/projects/ecoactua/thumbnail-ecoactua.jpg"
 ---
 
