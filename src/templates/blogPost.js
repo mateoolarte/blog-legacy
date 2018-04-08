@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
-import { DiscussionEmbed } from "disqus-react";
+import Disqus from "disqus-react";
 import styles from "../styles/Post.module.css";
 
 export default function Template({ data }) {
@@ -9,8 +9,11 @@ export default function Template({ data }) {
   const { markdownRemark, allMarkdownRemark } = data; // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark;
   const post = markdownRemark.frontmatter;
-  const disqusShortname = "mateoolarte";
+
+  const disqusShortname = "blogmateoolarte";
+
   const disqusConfig = {
+    url: post.path,
     identifier: post.id,
     title: post.title
   };
@@ -49,9 +52,11 @@ export default function Template({ data }) {
         className={styles.postContent}
         dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
       />
-      {allMarkdownRemark.edges.length > 0 && (
+      {allMarkdownRemark.edges.length > 2 && (
         <footer className={styles.postOthers}>
-          <h3 className={`${styles.postOthersHeading} heading`}>También te puede interesar</h3>
+          <h3 className={`${styles.postOthersHeading} heading`}>
+            También te puede interesar
+          </h3>
           <div className={styles.postOthersContainer}>
             {otherPosts.map((post, i) => {
               return (
@@ -74,7 +79,7 @@ export default function Template({ data }) {
           </div>
         </footer>
       )}
-      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+      <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </article>
   );
 }

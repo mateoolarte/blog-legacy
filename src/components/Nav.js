@@ -17,7 +17,7 @@ export default function Nav({ currentUrl, menuScrolled }) {
   return (
     <header
       className={
-        currentUrl === "/"
+        currentUrl === true
           ? `${styles.header} ${menuScrolled}`
           : `${styles.header} ${styles.headerFixed}`
       }

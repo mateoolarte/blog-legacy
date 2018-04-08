@@ -1,8 +1,8 @@
 ---
-id: 1
-path: "/other-post"
+id: 4
+path: "/hola-mundo"
 date: "2018-04-05"
-title: "Changing Careers? Here’s Exactly What To Put On Your Resume"
+title: "Hola mundo"
 thumbnail: "https://res.cloudinary.com/mateoolarte/image/upload/v1522387717/personal_website/projects/ecoactua/thumbnail-ecoactua.jpg"
 cover: "https://res.cloudinary.com/mateoolarte/image/upload/v1522388978/personal_website/projects/ecoactua/hero-ecoactua.jpg"
 tags: []

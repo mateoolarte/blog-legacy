@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import Nav from "../components/Nav.js";
+import { withPrefix } from "gatsby-link";
 import favicon from "../images/favicon.ico";
 import "./index.css";
 
@@ -39,6 +40,7 @@ class TemplateWrapper extends React.Component {
   }
 
   render() {
+    var hola = this.props.location.pathname === withPrefix("/") || this.props.location.pathname === withPrefix("/blog/")
     return (
       <main>
         <Helmet
@@ -47,13 +49,17 @@ class TemplateWrapper extends React.Component {
             { name: "description", content: "Sample" },
             { name: "keywords", content: "sample, something" }
           ]}
-          link={[{ rel: "shortcut icon", href: `${favicon}` }]}
+          link={[
+            { href: `${favicon}`, rel: "shortcut icon" },
+            {
+              href:
+              "https://fonts.googleapis.com/css?family=Encode+Sans:300,500,700",
+              rel: "stylesheet"
+            }
+          ]}
         />
 
-        <Nav
-          currentUrl={window.location.pathname}
-          menuScrolled={this.state.scrolledMenu}
-        />
+        <Nav menuScrolled={this.state.scrolledMenu} currentUrl={hola} />
 
         {this.props.children()}
       </main>
