@@ -6,7 +6,7 @@ export default function PostLink({ post, styles, classTwoPosts }) {
     <article className={`${classTwoPosts} ${styles.postsItem}`}>
       <Link to={post.frontmatter.path} className={styles.postsLink}>
         <img
-          src={post.frontmatter.cover}
+          src={post.frontmatter.thumbnail}
           className={styles.postsImage}
           alt={post.frontmatter.title}
         />

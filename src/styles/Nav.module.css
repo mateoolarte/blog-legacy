@@ -1,6 +1,7 @@
 :root {
   --blue-light: #2196f3;
   --black: #02060c;
+  --animation: cubic-bezier(0.57, 0.21, 0.69, 1.25);
 }
 
 .header {
@@ -8,20 +9,22 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 2rem 4rem;
-  transition: padding 0.37s ease-in;
+  transition: padding 0.37s var(--animation);
   z-index: 2;
 }
 
 .headerFixed {
-  padding: 1rem 4rem;
+  padding: 0.8rem 5%;
   background-color: var(--black);
 }
 
 .logo {
   width: 90px;
-  transition: opacity 0.37s ease-out;
+  transition: opacity 0.37s var(--animation);
 }
 
 .logo:hover {
@@ -41,6 +44,8 @@
 .contactMe__list {
   display: flex;
   margin: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .contactMe__listItem {
@@ -49,7 +54,7 @@
 
 .contactMe__listItem img {
   width: 1.5rem;
-  transition: opacity 0.37s ease-out;
+  transition: opacity 0.37s var(--animation);
 }
 
 .contactMe__listItem img:hover {
@@ -67,5 +72,23 @@
 
   .contactMe__listItem img {
     width: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerFixed {
+    padding: 0.8rem 5%;
+  }
+}
+
+@media (min-width: 1180px) {
+  .headerFixed {
+    padding: 0.8rem 12%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .headerFixed {
+    padding: 0.8rem 25%;
   }
 }

@@ -1,0 +1,14 @@
+:root {
+  --font: "Encode Sans", sans-serif;
+  --blue: #1755b2;
+  --blue-light: #2196f3;
+  --orange: #ff9800;
+  --white: #f9fafc;
+  --black: #02060c;
+  --black-lighter: #1f232b;
+  --animation: cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  background: var(--black-lighter);
+}

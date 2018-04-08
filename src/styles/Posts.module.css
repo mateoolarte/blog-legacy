@@ -29,7 +29,6 @@
   height: 220px;
   border: 1px solid var(--black-lighter);
   transition: filter 0.37s var(--animation);
-  object-fit: cover;
 }
 
 .postsTitle {
@@ -42,11 +41,21 @@
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.8rem;
+  font-weight: lighter;
 }
 
 .postsDescription {
   color: rgba(0, 0, 0, 0.6);
   font-size: 0.9rem;
+  font-weight: normal;
+}
+
+.postsLink:visited {
+  color: transparent;
+}
+
+.postsLink:hover {
+  text-decoration: none;
 }
 
 .postsLink:hover .postsInfo {

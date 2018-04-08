@@ -1,0 +1,125 @@
+:root {
+  --blue: #1755b2;
+  --blue-light: #2196f3;
+  --orange: #ff9800;
+  --black-lighter: #1f232b;
+  --animation: cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.post {
+  width: 90%;
+  max-width: 840px;
+  margin: 100px auto 3rem;
+}
+
+.postHeader {
+  margin-bottom: 2rem;
+}
+
+.postTitle {
+  margin: 0;
+  color: var(--blue);
+}
+
+.postDate {
+  margin: 0.5rem 0 2rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.postHeaderImg {
+  width: 100%;
+  height: 250px;
+  border: 1px solid var(--black-lighter);
+}
+
+.postContent {
+  margin-bottom: 3rem;
+  color: var(--black-lighter);
+}
+
+.postOthers {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.postOthersHeading {
+  font-size: 1.6rem;
+}
+
+.postOthersItem {
+  display: block;
+}
+
+.postOthersItem:hover {
+  text-decoration: none;
+}
+
+.postOthersItem:visited {
+  color: var(--blue);
+}
+
+.postOthersImage {
+  width: 100%;
+  height: 180px;
+  border: 1px solid var(--black-lighter);
+}
+
+.postOthersTitle {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .post {
+    margin-top: 150px;
+  }
+
+  .postHeader,
+  .postDate {
+    margin-bottom: 2.5rem;
+  }
+
+  .postDate {
+    font-size: 1rem;
+  }
+
+  .postHeaderImg {
+    height: 350px;
+  }
+
+  .postOthers {
+    margin: 0;
+  }
+
+  .postOthersHeading {
+    font-size: 2rem;
+  }
+
+  .postOthersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .postOthersItem {
+    width: calc(100% / 2);
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .postHeaderImg {
+    height: 430px;
+  }
+
+  .postOthersItem {
+    width: calc(100% / 3);
+    padding: 1rem;
+  }
+
+  .postOthersTitle {
+    font-size: 1.2rem;
+  }
+}

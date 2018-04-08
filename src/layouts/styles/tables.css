@@ -1,0 +1,19 @@
+:root {
+  --black-lighter: #1f232b;
+}
+
+table {
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+th {
+  background-color: rgba(23, 85, 178);
+  color: var(--white);
+}

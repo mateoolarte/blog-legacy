@@ -1,3 +1,11 @@
+@import "./vendors/prism-okaidia.css";
+@import "./styles/base.css";
+@import "./styles/typography.css";
+@import "./styles/tables.css";
+@import "./styles/buttons.css";
+@import "./styles/utils.css";
+@import "./styles/mdHighlight.css";
+
 :root {
   --font: "Encode Sans", sans-serif;
   --blue: #1755b2;
@@ -9,69 +17,36 @@
   --animation: cubic-bezier(0.57, 0.21, 0.69, 1.25);
 }
 
-* {
-  box-sizing: border-box;
+.headerScrolled {
+  padding: 0.5rem 1rem;
+  background-color: var(--black);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: var(--font);
-  font-size: 16px;
+.task-list-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0 0.5rem -40px;
+  list-style-type: none;
 }
 
-body.in-transition {
-  transition: transform 800ms ease-in;
+.task-list-item input {
+  margin-right: 0.5rem;
 }
 
-ul {
-  padding-left: 0;
-  list-style: none;
+img {
+  max-width: 100%;
+  max-height: 480px;
+  object-fit: cover;
 }
 
-a {
-  text-decoration: none;
-}
-
-.heading {
-  display: inline-block;
-  margin: 0 auto 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 4px solid var(--blue);
-  color: var(--blue);
-  font-size: 3rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.margin-bottom-3 {
-  margin-bottom: 3rem;
-}
-
-@media (max-width: 568px) {
-  .heading {
-    font-size: 2.5rem;
+@media (min-width: 568px) {
+  .headerScrolled {
+    padding: 0.8rem 5%;
   }
 }
 
-/* Primary button */
-.btnPrimary {
-  display: inline-block;
-  color: var(--blue);
-  padding: 0.6rem 2rem;
-  border: 2px solid var(--blue);
-  transition: color 0.37s ease-in, background-color 0.37s var(--animation);
+@media (min-width: 1600px) {
+  .headerScrolled {
+    padding: 0.8rem 15%;
+  }
 }
-
-.btnPrimary:hover {
-  color: #fff;
-  background-color: var(--blue);
-}
-
-.btnLarge {
-  padding: 1rem 2.5rem;
-  font-size: 1.2rem;
-}
-/* Primary button */

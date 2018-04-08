@@ -11,7 +11,7 @@ npm i -g gatsby-cli
 
 Then you can run development environment by:
 ```sh
-npm run develop
+yarn develop
 ```
 
 ## Deploy

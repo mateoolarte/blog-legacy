@@ -12,7 +12,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
 
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map((edge, i) => {
+    .map(edge => {
       return <PostLink key={edge.node.id} post={edge.node} styles={stylesPosts} classTwoPosts={layoutTwoPost} />
     });
 
@@ -33,7 +33,7 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
       </header>
       <section className={stylesPosts.postsContainer}>
         <h1 className={`heading ${stylesPosts.postsHeading}`}>
-          Entradas más reciente
+          Entradas más recientes
         </h1>
         {Posts}
 
@@ -65,6 +65,7 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             path
             title
+            thumbnail
             cover
           }
         }

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
-import styles from "../styles/Nav.module.css"
-import website from "../images/website.svg"
+import styles from "../styles/Nav.module.css";
+import website from "../images/website.svg";
 
 const github =
   "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_website/github.svg";
@@ -12,14 +12,22 @@ const email =
 const logo =
   "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_website/logo.svg";
 
-export default function Header() {
+export default function Nav({ currentUrl, menuScrolled }) {
+
   return (
-    <header className={`${styles.header}`}>
-      <a href="/">
+    <header
+      className={
+        currentUrl === "/"
+          ? `${styles.header} ${menuScrolled}`
+          : `${styles.header} ${styles.headerFixed}`
+      }
+    >
+      <Link to="/">
         <img src={logo} className={styles.logo} alt="Logo" />
-      </a>
+      </Link>
+
       <div className={styles.contactMe}>
-        <span>Contact me</span>
+        <span>Contáctame</span>
         <ul className={styles.contactMe__list}>
           <li className={styles.contactMe__listItem}>
             <a
@@ -58,13 +66,3 @@ export default function Header() {
     </header>
   );
 }
-
-// const Header = () => {
-//   return <header>
-//       <h1>
-//         <Link to="/">Home</Link>
-//       </h1>
-//     </header>;
-// };
-
-// export default Header;
