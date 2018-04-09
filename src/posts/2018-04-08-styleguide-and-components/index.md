@@ -1,5 +1,6 @@
 ---
 id: 3
+url: "https://mateoolarte.com/blog/styleguide-and-components"
 path: "/styleguide-and-components"
 date: "2018-04-08"
 title: "Styleguide and components"

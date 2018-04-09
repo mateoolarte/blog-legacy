@@ -1,8 +1,7 @@
 import React from "react";
-import Disqus from "disqus-react";
 import Link from "gatsby-link";
+import { DiscussionEmbed } from "disqus-react";
 import Helmet from "react-helmet";
-// import ReactDisqusThread from "react-disqus-thread";
 import styles from "../styles/Post.module.css";
 
 export default function Template({ data }) {
@@ -14,6 +13,7 @@ export default function Template({ data }) {
   const disqusShortname = "mateoolarte";
 
   const disqusConfig = {
+    url: post.url,
     identifier: post.id.toString(),
     title: post.title
   };
@@ -34,10 +34,7 @@ export default function Template({ data }) {
 
     return otherPosts;
   });
-
-  console.log(disqusConfig)
   
-
   return (
     <article className={styles.post}>
       <Helmet title={frontmatter.title} />
@@ -81,7 +78,7 @@ export default function Template({ data }) {
           </div>
         </footer>
       )}
-      <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+      <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </article>
   );
 }
@@ -92,6 +89,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         id
+        url
         date(formatString: "MMMM DD, YYYY")
         path
         title

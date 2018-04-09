@@ -1,6 +1,8 @@
 module.exports = {
+  pathPrefix: `/blog`,
   siteMetadata: {
-    title: `Blog - Mateo Olarte Fullstack & UX Developer`
+    title: `Blog - Mateo Olarte Fullstack & UX Developer`,
+    siteUrl: `https://mateoolarte.com/blog`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -50,7 +52,5 @@ module.exports = {
         path: `${__dirname}/src/posts/`
       }
     }
-  ],
-
-  pathPrefix: `/blog`
+  ]
 };
