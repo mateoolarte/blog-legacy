@@ -12,16 +12,9 @@ const email =
 const logo =
   "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_website/logo.svg";
 
-export default function Nav({ currentUrl, menuScrolled }) {
-
+export default function Nav() {
   return (
-    <header
-      className={
-        currentUrl === true
-          ? `${styles.header} ${menuScrolled}`
-          : `${styles.header} ${styles.headerFixed}`
-      }
-    >
+    <header className={`${styles.header} ${styles.headerFixed}`}>
       <Link to="/">
         <img src={logo} className={styles.logo} alt="Logo" />
       </Link>
@@ -35,7 +28,7 @@ export default function Nav({ currentUrl, menuScrolled }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={website} alt="" />
+              <img src={website} alt="Website" />
             </a>
           </li>
           <li className={styles.contactMe__listItem}>
@@ -44,7 +37,7 @@ export default function Nav({ currentUrl, menuScrolled }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={twitter} alt="" />
+              <img src={twitter} alt="Twitter" />
             </a>
           </li>
           <li className={styles.contactMe__listItem}>
@@ -53,12 +46,12 @@ export default function Nav({ currentUrl, menuScrolled }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={github} alt="" />
+              <img src={github} alt="Github" />
             </a>
           </li>
           <li className={styles.contactMe__listItem}>
             <a href="mailto:mateo.olarte8@gmail.com">
-              <img src={email} alt="" />
+              <img src={email} alt="Email" />
             </a>
           </li>
         </ul>

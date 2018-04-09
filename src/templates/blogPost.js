@@ -1,7 +1,8 @@
 import React from "react";
+import Disqus from "disqus-react";
 import Link from "gatsby-link";
 import Helmet from "react-helmet";
-import Disqus from "disqus-react";
+// import ReactDisqusThread from "react-disqus-thread";
 import styles from "../styles/Post.module.css";
 
 export default function Template({ data }) {
@@ -10,11 +11,10 @@ export default function Template({ data }) {
   const { frontmatter, html } = markdownRemark;
   const post = markdownRemark.frontmatter;
 
-  const disqusShortname = "blogmateoolarte";
+  const disqusShortname = "mateoolarte";
 
   const disqusConfig = {
-    url: post.path,
-    identifier: post.id,
+    identifier: post.id.toString(),
     title: post.title
   };
 
@@ -35,6 +35,9 @@ export default function Template({ data }) {
     return otherPosts;
   });
 
+  console.log(disqusConfig)
+  
+
   return (
     <article className={styles.post}>
       <Helmet title={frontmatter.title} />
@@ -43,7 +46,6 @@ export default function Template({ data }) {
         <h2 className={styles.postDate}>{frontmatter.date}</h2>
         <img
           src={frontmatter.cover}
-          id="hola"
           className={styles.postHeaderImg}
           alt={frontmatter.title}
         />

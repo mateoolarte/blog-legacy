@@ -12,6 +12,7 @@
     "gatsby-remark-prismjs": "^1.2.23",
     "gatsby-source-filesystem": "^1.5.27",
     "gatsby-transformer-remark": "^1.7.39",
+    "react-disqus-thread": "^0.4.0",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
