@@ -1,11 +1,18 @@
 module.exports = {
-  pathPrefix: `/blog`,
   siteMetadata: {
-    title: `Blog - Mateo Olarte Fullstack & UX Developer`,
-    siteUrl: `https://mateoolarte.com/blog`
+    title: `Blog - Mateo Olarte - Fullstack & UX Developer`,
+    siteUrl: `https://blog.mateoolarte.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-60678906-2",
+        // Puts tracking script in the head instead of the body
+        head: true,
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

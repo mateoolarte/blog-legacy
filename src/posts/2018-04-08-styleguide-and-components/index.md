@@ -4,8 +4,8 @@ url: "https://mateoolarte.com/blog/styleguide-and-components"
 path: "/styleguide-and-components"
 date: "2018-04-08"
 title: "Styleguide and components"
-thumbnail: "https://res.cloudinary.com/mateoolarte/image/upload/v1522387717/personal_website/projects/ecoactua/thumbnail-ecoactua.jpg"
-cover: "https://res.cloudinary.com/mateoolarte/image/upload/v1522388978/personal_website/projects/ecoactua/hero-ecoactua.jpg"
+thumbnail: "https://res.cloudinary.com/mateoolarte/image/upload/v1522387717/personal_brand/projects/ecoactua/thumbnail-ecoactua.jpg"
+cover: "https://res.cloudinary.com/mateoolarte/image/upload/v1522388978/personal_brand/projects/ecoactua/hero-ecoactua.jpg"
 tags: []
 ---
 ## Paragraphs
@@ -127,6 +127,6 @@ function test() {
 ---
 
 ## Images
-![Funny cat](https://res.cloudinary.com/mateoolarte/image/upload/v1522387717/personal_website/projects/ecoactua/thumbnail-ecoactua.jpg)
+![Funny cat](https://res.cloudinary.com/mateoolarte/image/upload/v1522387717/personal_brand/projects/ecoactua/thumbnail-ecoactua.jpg)
 
-![Funny cat](https://res.cloudinary.com/mateoolarte/image/upload/v1522388978/personal_website/projects/ecoactua/hero-ecoactua.jpg)
+![Funny cat](https://res.cloudinary.com/mateoolarte/image/upload/v1522388978/personal_brand/projects/ecoactua/hero-ecoactua.jpg)

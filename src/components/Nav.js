@@ -1,16 +1,17 @@
 import React from "react";
 import Link from "gatsby-link";
 import styles from "../styles/Nav.module.css";
-import website from "../images/website.svg";
 
 const github =
-  "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_website/github.svg";
+  "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_brand/assets/github.svg";
 const twitter =
-  "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_website/twitter.svg";
+  "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_brand/assets/twitter.svg";
 const email =
-  "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_website/email.svg";
+  "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_brand/assets/email.svg";
+const website =
+  "https://res.cloudinary.com/mateoolarte/image/upload/v1524339799/personal_brand/assets/website.svg";
 const logo =
-  "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_website/logo.svg";
+  "https://res.cloudinary.com/mateoolarte/image/upload/v1521778769/personal_brand/assets/logo.svg";
 
 export default function Nav() {
   return (

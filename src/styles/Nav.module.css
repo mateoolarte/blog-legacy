@@ -81,14 +81,8 @@
   }
 }
 
-@media (min-width: 1180px) {
-  .headerFixed {
-    padding: 0.8rem 12%;
-  }
-}
-
 @media (min-width: 1600px) {
   .headerFixed {
-    padding: 0.8rem 25%;
+    padding: 0.8rem 15%;
   }
 }

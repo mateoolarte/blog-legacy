@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "gatsby-link";
-import { DiscussionEmbed } from "disqus-react";
 import Helmet from "react-helmet";
+import { DiscussionEmbed } from "disqus-react";
+
 import styles from "../styles/Post.module.css";
 
 export default function Template({ data }) {
