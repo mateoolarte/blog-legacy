@@ -62,7 +62,7 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 180)
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MMMM DD, YYYY")
             path
             title
             thumbnail
