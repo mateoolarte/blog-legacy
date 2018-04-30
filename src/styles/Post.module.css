@@ -35,6 +35,19 @@
   border: 1px solid var(--black-lighter);
 }
 
+.postHeaderCaption {
+  margin: 0.5rem 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8rem;
+}
+
+.postHeaderCaption a {
+  margin: 0.5rem 0;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .postContent {
   margin-bottom: 3rem;
   color: var(--black-lighter);

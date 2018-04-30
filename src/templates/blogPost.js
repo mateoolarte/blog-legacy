@@ -35,18 +35,23 @@ export default function Template({ data }) {
 
     return otherPosts;
   });
-  
+
   return (
     <article className={styles.post}>
       <Helmet title={frontmatter.title} />
       <header className={styles.postHeader}>
         <h1 className={styles.postTitle}>{frontmatter.title}</h1>
         <h2 className={styles.postDate}>{frontmatter.date}</h2>
-        <img
-          src={frontmatter.cover}
-          className={styles.postHeaderImg}
-          alt={frontmatter.title}
-        />
+        <figure>
+          <img
+            src={frontmatter.cover}
+            className={styles.postHeaderImg}
+            alt={frontmatter.title}
+          />
+          {frontmatter.copyright.length > 0 && (
+            <figcaption className={styles.postHeaderCaption}>Tomado de: <a href={frontmatter.copyright}>{frontmatter.copyright}</a></figcaption>
+          )}
+        </figure>
       </header>
       <div
         className={styles.postContent}
@@ -96,6 +101,7 @@ export const pageQuery = graphql`
         title
         thumbnail
         cover
+        copyright
       }
     }
 
