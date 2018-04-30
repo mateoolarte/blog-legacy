@@ -30,6 +30,10 @@
 }
 
 .postHeaderImg {
+  margin: 0;
+}
+
+.postHeaderImg img {
   width: 100%;
   height: 250px;
   border: 1px solid var(--black-lighter);
@@ -98,7 +102,7 @@
     font-size: 1rem;
   }
 
-  .postHeaderImg {
+  .postHeaderImg img {
     height: 350px;
   }
 
@@ -123,7 +127,7 @@
 }
 
 @media (min-width: 1024px) {
-  .postHeaderImg {
+  .postHeaderImg img {
     height: 430px;
   }
 

@@ -42,10 +42,9 @@ export default function Template({ data }) {
       <header className={styles.postHeader}>
         <h1 className={styles.postTitle}>{frontmatter.title}</h1>
         <h2 className={styles.postDate}>{frontmatter.date}</h2>
-        <figure>
+        <figure className={styles.postHeaderImg}>
           <img
             src={frontmatter.cover}
-            className={styles.postHeaderImg}
             alt={frontmatter.title}
           />
           {frontmatter.copyright.length > 0 && (
