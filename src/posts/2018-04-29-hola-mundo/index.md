@@ -15,7 +15,7 @@ Antes de empezar me gustaria aclarar. Este blog es otro más en este basto mundo
 ---
 
 ##Quien soy
-Mi nombre es Mateo Olarte, vivo en la ciudad de Medellín, Colombia. Llevo más de 5 años en el mundo del internet, hace 3 años soy **desarrollador de software** y en mis tiempos libre me gusta trabajar en mis **emprendimientos**. Me apasiona todo lo relacionado con tecnologías web, tanto en el lado del cliente (**Frontend**) como en el lado del servidor (**Backend**). Además, me gusta el emprendimiento porque es la forma de resolver problemas comunes que las personas tienen y generar una solución con tecnología.
+Mi nombre es Mateo Olarte, vivo en la ciudad de Medellín, Colombia. Llevo más de 5 años en el mundo del internet, hace 3 años soy **desarrollador de software** y en mis tiempos libres me gusta trabajar en mis **emprendimientos**. Me apasiona todo lo relacionado con tecnologías web, tanto en el lado del cliente (**Frontend**) como en el lado del servidor (**Backend**). Además, me gusta el emprendimiento porque es la forma de resolver problemas comunes que las personas tienen y generar una solución con tecnología.
 
 ##¿Por qué este blog?
 Quiero compartir, enseñarte mi recorrido y experiencias profesionales, ya sea con **recursos**, **tutoriales** y en general mucho contenido para que se familiaricen con las tecnologías que manejo y cómo te pueden ayudar para tu futuro. Además buscaré compartirte mis emprendimientos, lecciones aprendidas y cual es el proceso para crear y ejecutar un proyecto.
