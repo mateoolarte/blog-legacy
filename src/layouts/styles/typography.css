@@ -35,6 +35,10 @@ li {
   font-size: 1rem;
 }
 
+li {
+  line-height: 1.6;
+}
+
 li > p {
   margin: 0 0 0.5rem;
 }
