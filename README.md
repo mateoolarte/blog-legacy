@@ -18,4 +18,8 @@ yarn develop
 
 ## Deploy
 
-The website automatically is deployed to Netlify
+For deploy website to Github Pages:
+
+```sh
+yarn deploy
+```
