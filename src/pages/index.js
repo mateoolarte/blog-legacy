@@ -4,30 +4,35 @@ import styles from "../styles/Hero.module.css";
 import stylesPosts from "../styles/Posts.module.css";
 
 const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
-  let layoutTwoPost = false
+  let layoutTwoPost = false;
 
   if (edges.length === 2) {
-    layoutTwoPost = stylesPosts.postsItemLayoutTwo
+    layoutTwoPost = stylesPosts.postsItemLayoutTwo;
   }
 
   const Posts = edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => {
-      return <PostLink key={edge.node.id} post={edge.node} styles={stylesPosts} classTwoPosts={layoutTwoPost} />
+      return (
+        <PostLink
+          key={edge.node.id}
+          post={edge.node}
+          styles={stylesPosts}
+          classTwoPosts={layoutTwoPost}
+        />
+      );
     });
 
   return (
     <section className="wrapper">
       <header className={styles.hero}>
         <div className={styles.heroInfo}>
-          <h1 className={styles.heroTitle}>
-            Hola! bienvenido a mi blog personal
-          </h1>
+          <h1 className={styles.heroTitle}>Bienvenido a mi blog personal</h1>
           <p className={styles.heroDescription}>
-            A través de articulos, tutoriales, experiencias y entre muchas cosas
-            nerds :D, trataré de ayudarte aportando mis consejos, conocimiento y
-            experiencias que he tenido ya sea creando un proyecto como también
-            información acerca de alguna conferencia a la cual asista.
+            Por medio de articulos, tutoriales, experiencias y cosas nerds. Te
+            compartiré mis consejos, conocimientos y aprendizajes, creando
+            proyectos o aportando información acerca de alguna tecnología en
+            particular.
           </p>
         </div>
       </header>
