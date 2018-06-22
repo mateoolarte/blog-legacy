@@ -29,10 +29,9 @@ const IndexPage = ({ data: { allMarkdownRemark: { edges } } }) => {
         <div className={styles.heroInfo}>
           <h1 className={styles.heroTitle}>Bienvenido a mi blog personal</h1>
           <p className={styles.heroDescription}>
-            Por medio de articulos, tutoriales, experiencias y cosas nerds. Te
-            compartiré mis consejos, conocimientos y aprendizajes, creando
-            proyectos o aportando información acerca de alguna tecnología en
-            particular.
+            Por medio de articulos, tutoriales y experiencias. Te compartiré
+            consejos, aprendizajes, proyectos o aportando información acerca de
+            alguna tecnología en particular.
           </p>
         </div>
       </header>
